@@ -3,22 +3,32 @@
         <div class="headContent">
             <ul>
                 <li>
-                    <span>首页</span>
+                    <a href="/main/home">
+                        <span>首页</span>
+                    </a>
                 </li>
                 <li>
-                    <span>基础概念</span>
+                    <a href="/main/base">
+                        <span>基础概念</span>
+                    </a>
                 </li>
                 <li>
-                    <span>框架应用</span>
+                    <a href="/main/frame">
+                        <span>框架应用</span>
+                    </a>
                 </li>
                 <li>
-                    <span>开源站点</span>
+                    <a href="/main/open">
+                        <span>开源站点</span>
+                    </a>
                 </li>
                 <li>
-                    <span>前沿技术</span>
+                    <a href="/main/future">
+                        <span>前沿技术</span>
+                    </a>
                 </li>
                 <li>
-                    <a href="https://github.com/Bigredorange" target="_blank">
+                    <a href="https://github.com/Bigredorange/vueStudy" target="_blank">
                         <span>fork me</span>
                     </a>
                 </li>

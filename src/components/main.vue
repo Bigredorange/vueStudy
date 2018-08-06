@@ -11,11 +11,16 @@
     <input @change="valueChange" v-model="obj.text" />
     <span>{{obj.text}}</span>
     <button route-link=""></button> -->
+    <head-bar></head-bar>
     <router-view></router-view>
   </div>
 </template>
 <script>
+  import headBar from '@/components/head-bar.vue'
   export default {
+    components: {
+      headBar
+    },
     data() {
       return {
         other: 3,
