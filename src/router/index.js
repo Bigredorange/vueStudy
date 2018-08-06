@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import main from '@/components/main'
 import Personal from '@/components/personal'
 
+let importPage = page => () => import(`@/pages/${page}`)
 Vue.use(Router)
 
 export default new Router({
@@ -16,16 +17,20 @@ export default new Router({
         {
           path: 'personal',
           component: Personal
+        },
+        {
+          path: 'home',
+          component: importPage('home')
         }
       ],
     },
     {
       path: '/',
-      redirect: '/main/personal'
+      redirect: '/main/home'
     },
     {
       path: '*',
-      redirect: '/main/personal'
+      redirect: '/main/home'
     }
   ]
 })

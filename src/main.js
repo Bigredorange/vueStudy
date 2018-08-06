@@ -8,6 +8,7 @@ import 'element-ui/lib/theme-chalk/index.css'
 import anchoredHeading from './components/anchored-heading'
 Vue.config.productionTip = false
 
+import '@/style/reset.scss'
 Vue.use(ElementUI)
 
 /* eslint-disable no-new */

@@ -1,0 +1,91 @@
+@import './utils',
+'./app';
+body,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+fieldset,
+table,
+td,
+img,
+div,
+dl,
+dt,
+dd,
+input,
+p,
+a,
+section,
+figure,
+figcaption,
+hgroup,
+pre,
+i {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    word-break: break-all;
+}
+
+html,
+body {
+    height: 100%;
+    font-family: 'PingFang SC';
+    color: #333;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: normal;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    color: inherit;
+    -webkit-tap-highlight-color: transparent;
+    text-decoration: none !important;
+}
+
+input,
+button {
+    -webkit-appearance: none;
+    border: none;
+    outline: none;
+}
+
+textarea {
+    font-family: 'PingFang SC';
+}
+
+button {
+    -webkit-user-select: none;
+}
+
+pre {
+    white-space: pre-wrap;
+    font-family: 'PingFang SC';
+}
+
+i {
+    font-style: normal;
+}
+
+.ellipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
