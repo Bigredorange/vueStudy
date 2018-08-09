@@ -3,7 +3,7 @@
         <div class="sectionWraper">
             <div class="section-item-wraper">
                 <div class="section-item" v-for="(item,index) in [1,2,3]" :key="index" style="height:580px;background: #fafafa;border-bottom: 12px solid #fff;text-align:center;">
-                    <div>cool</div>
+                    <div class="section-title">cool</div>
                     <div>img</div>
                 </div>
             </div>
