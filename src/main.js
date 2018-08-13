@@ -9,6 +9,8 @@ import anchoredHeading from './components/anchored-heading'
 Vue.config.productionTip = false
 
 import '@/style/reset.scss'
+import '@/style/app.scss'
+
 Vue.use(ElementUI)
 
 /* eslint-disable no-new */

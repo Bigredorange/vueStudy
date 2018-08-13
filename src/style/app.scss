@@ -1,0 +1,18 @@
+html {
+    margin-top: 40px !important;
+}
+body {
+    border-top: 1px solid transparent;
+    margin-top: -1px;
+    position: relative;
+}
+@media only screen and (max-width: 767px) {
+    html {
+        margin-top: 44px !important;
+    }
+}
+.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
+}

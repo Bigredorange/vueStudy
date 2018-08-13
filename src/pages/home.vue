@@ -1,25 +1,13 @@
 <template>
     <div class="wraper">
-        <div class="sectionWraper">
+        <!-- <div class="sectionWraper">
             <div class="section-item-wraper">
                 <div class="section-item" v-for="(item,index) in [1,2,3]" :key="index" style="height:580px;background: #fafafa;border-bottom: 12px solid #fff;text-align:center;">
                     <div class="section-title">cool</div>
                     <div>img</div>
                 </div>
             </div>
-            <!-- <div>
-                <div class="section-item">
-                    <div>guy</div>
-                    <div>img</div>
-                </div>
-            </div>
-            <div>
-                <div class="section-item">
-                    <div>yep</div>
-                    <div>img</div>
-                </div>
-            </div> -->
-        </div>
+        </div> -->
     </div>
 </template>
 <script>
@@ -28,7 +16,7 @@
 </script>
 <style lang="scss" scoped>
     .wraper {
-      max-width: 1200px;
+      //   max-width: 1200px;
       margin: 0 auto;
       &.sectionWraper .section-item-wraper {
         display: block;
