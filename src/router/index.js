@@ -7,7 +7,7 @@ let importPage = page => () => import(`@/pages/${page}`)
 Vue.use(Router)
 
 export default new Router({
-  // mode: 'history',
+  mode: 'history',
   routes: [
     {
       path: '/main',
@@ -21,16 +21,21 @@ export default new Router({
         {
           path: 'home',
           component: importPage('home')
-        }
+        },
+        {
+          path: '404',
+          component: importPage('error/404')
+        },
       ],
     },
-    {
-      path: '/',
-      redirect: '/main/home'
-    },
+
+    // {
+    //   path: '/',
+    //   redirect: '/main/home'
+    // },
     {
       path: '*',
-      redirect: '/main/home'
+      redirect: '/main/404'
     }
   ]
 })

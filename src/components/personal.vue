@@ -4,6 +4,14 @@
         <!-- <el-input :suffix-icon="el-icon-close">
             <el-button slot="append">search</el-button>
         </el-input> -->
+        <div v-for="item in [1,2,3,4]">
+            <anchored-heading :level="item">
+                <span>
+                    cool guy
+                    <span>children</span>
+                </span>
+            </anchored-heading>
+        </div>
         <el-input placeholder="请输入内容" size="small" v-model="message" class="input-with-select">
             <el-select v-model="select" slot="prepend" placeholder="请选择">
                 <el-option label="餐厅名" value="1"></el-option>

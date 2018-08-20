@@ -16,3 +16,19 @@ body {
     position: sticky;
     top: 0px;
 }
+.flex {
+    display: flex;
+}
+.flex-center {
+    display: flex;
+    justify-content: center;
+}
+.padding-tp-20 {
+    padding-top: 20px;
+}
+.margin-bt-20 {
+    margin-bottom: 20px;
+}
+.margin-tp-bt-20 {
+    margin: 20px 0;
+}
