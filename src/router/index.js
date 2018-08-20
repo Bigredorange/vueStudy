@@ -28,11 +28,10 @@ export default new Router({
         },
       ],
     },
-
-    // {
-    //   path: '/',
-    //   redirect: '/main/home'
-    // },
+    {
+      path: '/',
+      redirect: '/main/home'
+    },
     {
       path: '*',
       redirect: '/main/404'
