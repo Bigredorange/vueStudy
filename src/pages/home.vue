@@ -29,5 +29,9 @@
           height: 580px !important;
         }
       }
+      background: url("../assets/common/bg.jpg");
+      height: 1200px;
+      background-size: 100%;
+      background-repeat: no-repeat;
     }
 </style>

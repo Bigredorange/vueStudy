@@ -13,13 +13,16 @@
     <button route-link=""></button> -->
     <head-bar></head-bar>
     <router-view></router-view>
+    <footer-bar></footer-bar>
   </div>
 </template>
 <script>
   import headBar from '@/components/head-bar.vue'
+  import footerBar from '@/components/footer-bar.vue'
   export default {
     components: {
-      headBar
+      headBar,
+      footerBar
     },
     data() {
       return {
