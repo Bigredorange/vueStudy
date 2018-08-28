@@ -65,7 +65,7 @@
               <!-- <a href="https://github.com/Bigredorange/vueStudy" target="_blank">
                 <span>fork me</span>
               </a> -->
-              <router-link href="https://github.com/Bigredorange/vueStudy" to="" target="_blank">fork me</router-link>
+              <router-link href="https://github.com/Bigredorange/vueStudy" to="/" target="_blank">fork me</router-link>
             </li>
           </ul>
         </div>
