@@ -1,6 +1,6 @@
 <template>
     <div class="bg-footer txt-center">
-        <router-link to="/" href="http://www.beian.gov.cn/" target="_blank">
+        <router-link to="/" href="http://www.miitbeian.gov.cn" target="_blank">
             粤ICP备18100312号
         </router-link>
     </div>
