@@ -6,7 +6,10 @@ import router from './router'
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
 import anchoredHeading from './components/anchored-heading'
+import './core/plugin'
+
 Vue.config.productionTip = false
+
 
 import '@/style/reset.scss'
 import '@/style/app.scss'

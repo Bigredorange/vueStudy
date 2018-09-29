@@ -12,6 +12,19 @@
 </template>
 <script>
     export default {
+        methods: {
+            getBlogList() {
+                this.$api.getBlogList().then(res => {
+                    console.log(res);
+
+                }).catch(err => {
+
+                })
+            }
+        },
+        created() {
+            this.getBlogList()
+        }
     }
 </script>
 <style lang="scss" scoped>
