@@ -1,8 +1,8 @@
 'use strict'
 // Template version: 1.3.1
 // see http://vuejs-templates.github.io/webpack for documentation.
-const baseURL = "http://localhost:8000/api/"
-const path = require('path')
+var baseURL = "http://localhost:8000/api/"
+var path = require('path')
 
 module.exports = {
   api: { "baseURL": baseURL },
