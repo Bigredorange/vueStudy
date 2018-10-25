@@ -4,6 +4,7 @@ import main from '@/components/main'
 import Personal from '@/components/personal'
 
 let importPage = page => () => import(`@/pages/${page}`)
+let importComponent = page => () => import(`@/components/${page}`)
 Vue.use(Router)
 
 export default new Router({
@@ -21,6 +22,10 @@ export default new Router({
         {
           path: 'home',
           component: importPage('home')
+        },
+        {
+          path: 'loading',
+          component: importComponent('loading/index')
         },
         {
           path: '404',

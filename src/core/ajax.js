@@ -7,7 +7,11 @@ import axios from 'axios';
 import qs from 'qs';
 import router from "../router/index";
 import config from "../../config/index";
+import {Loading} from 'element-ui';
+Vue.prototype.$loading = Loading;
+// import './plugin';
 
+// console.log(Loading);
 //配置接口地址
 if (!process.env.NODE_ENV) {
     process.env.NODE_ENV = JSON.parse(config.dev.env.NODE_ENV)
@@ -102,6 +106,9 @@ const toast = (t, fn) => {
 //     return config;
 // })
 // 添加请求拦截器
+// loading
+let vm = new Vue();
+let loading = vm.$loading.service({lock:true});
 axios.interceptors.request.use(config => {
     // 若是有做鉴权token , 就给头部带上token
     if (sessionStorage.token) {
@@ -113,10 +120,12 @@ axios.interceptors.request.use(config => {
     return Promise.reject(error);
 });
 
+
 // 添加响应拦截器
 axios.interceptors.response.use(response => {
     // 去除加载中动画
     loadOut();
+    loading.close();
     // 对响应数据做点什么
     const res = response.data;
 
@@ -154,6 +163,7 @@ axios.interceptors.response.use(response => {
 }, error => {
     // 去除加载中动画
     loadOut();
+    loading.close();
     // 对响应错误做点什么
     if (error.toString().includes('timeout of')) {
         toast('请求超时');
@@ -195,5 +205,6 @@ Vue.prototype.$loadIn = loadIn;
 Vue.prototype.$loadInFull = loadInFull;
 Vue.prototype.$loadOut = loadOut;
 Vue.prototype.$toast = toast;
+
 
 

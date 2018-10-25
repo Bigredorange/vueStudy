@@ -16,14 +16,17 @@
             getBlogList() {
                 this.$api.getBlogList().then(res => {
                     console.log(res);
-
                 }).catch(err => {
-
                 })
             }
         },
         created() {
             this.getBlogList()
+            console.log(this.$loading);
+            let loading = this.$loading({lock:true})
+            setTimeout(() => {
+                loading.close();
+            },2000)
         }
     }
 </script>

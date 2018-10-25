@@ -7,7 +7,7 @@ import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
 import anchoredHeading from './components/anchored-heading'
 import './core/plugin'
-
+import './core/ajax'
 Vue.config.productionTip = false
 
 
