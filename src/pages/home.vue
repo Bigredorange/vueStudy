@@ -11,8 +11,11 @@
     </div>
 </template>
 <script>
+import {mapGetters,mapMutations} from 'vuex';
     export default {
         methods: {
+            ...mapGetters(['getAuthorName']),
+            ...mapMutations(['setAuthorName','SET_EMAIL']),
             getBlogList() {
                 this.$api.getBlogList().then(res => {
                     console.log(res);
@@ -27,6 +30,9 @@
             setTimeout(() => {
                 loading.close();
             },2000)
+            console.log(this.getAuthorName());
+            this.setAuthorName({author:'little_Orange'});
+            this.SET_EMAIL({email:'1217192920@qq.com'});
         }
     }
 </script>

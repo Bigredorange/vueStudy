@@ -8,6 +8,7 @@ import 'element-ui/lib/theme-chalk/index.css'
 import anchoredHeading from './components/anchored-heading'
 import './core/plugin'
 import './core/ajax'
+import store from './store'
 Vue.config.productionTip = false
 
 
@@ -21,5 +22,6 @@ new Vue({
   el: '#app',
   router,
   components: { App },
-  template: '<App/>'
+  template: '<App/>',
+  store
 })
