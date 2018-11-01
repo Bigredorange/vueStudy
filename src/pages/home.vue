@@ -51,7 +51,9 @@ import {mapGetters,mapMutations} from 'vuex';
           height: 580px !important;
         }
       }
-      background: url("../assets/common/bg.jpg");
+    //   background-image: -webkit-radial-gradient(45% center, circle, rgba(39, 52, 99,0.9) 40%, rgba(139,66,86,0.9));
+      background-image: -webkit-radial-gradient(100% center, circle, rgba(39, 184, 196,0.9) 0%, rgba(178,194,140,0.9));
+    //   background: url("../assets/common/bg.jpg");
       height: 1200px;
       background-size: 100%;
       background-repeat: no-repeat;
