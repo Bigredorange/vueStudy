@@ -3,7 +3,7 @@
 > personal vue project
 
 # 在线实例
-> [点我查看](https://orangeai.club)
+> [点我查看](https://orangeai.club "实例站点")
 ## Build Setup
 
 ``` bash
