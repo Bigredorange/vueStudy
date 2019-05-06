@@ -27,7 +27,7 @@
       text-align: center;
       height: 1200px;
       /* background: #fee382; */
-      background-image: -webkit-radial-gradient(45% center, circle, rgba(39, 52, 99,0.9) 40%, rgba(139,66,86,0.9));
+      background-image: -webkit-radial-gradient(100% center, circle, rgba(39, 184, 196,0.9) 0%, rgba(178,194,140,0.9));
     }
     .txt-blue {
       color: #28abe3;

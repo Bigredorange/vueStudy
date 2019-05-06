@@ -108,7 +108,7 @@ const toast = (t, fn) => {
 // 添加请求拦截器
 // loading
 let vm = new Vue();
-let loading = vm.$loading.service({lock:true});
+// let loading = vm.$loading.service({lock:true});
 axios.interceptors.request.use(config => {
     // 若是有做鉴权token , 就给头部带上token
     if (sessionStorage.token) {
@@ -125,7 +125,7 @@ axios.interceptors.request.use(config => {
 axios.interceptors.response.use(response => {
     // 去除加载中动画
     loadOut();
-    loading.close();
+    // loading.close();
     // 对响应数据做点什么
     const res = response.data;
 

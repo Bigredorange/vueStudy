@@ -8,6 +8,13 @@
                 </div>
             </div>
         </div> -->
+        <div>
+            <ul>
+                <li>
+                    <h3>javascript</h3>
+                </li>
+            </ul>
+        </div>
     </div>
 </template>
 <script>
@@ -24,13 +31,13 @@ import {mapGetters,mapMutations} from 'vuex';
             }
         },
         created() {
-            this.getBlogList()
-            console.log(this.$loading);
-            let loading = this.$loading({lock:true})
-            setTimeout(() => {
-                loading.close();
-            },2000)
-            console.log(this.getAuthorName());
+            // this.getBlogList()
+            // console.log(this.$loading);
+            // let loading = this.$loading({lock:true})
+            // setTimeout(() => {
+            //     loading.close();
+            // },2000)
+            // console.log(this.getAuthorName());
             this.setAuthorName({author:'little_Orange'});
             this.SET_EMAIL({email:'1217192920@qq.com'});
         }
@@ -52,7 +59,7 @@ import {mapGetters,mapMutations} from 'vuex';
         }
       }
     //   background-image: -webkit-radial-gradient(45% center, circle, rgba(39, 52, 99,0.9) 40%, rgba(139,66,86,0.9));
-      background-image: -webkit-radial-gradient(100% center, circle, rgba(39, 184, 196,0.9) 0%, rgba(178,194,140,0.9));
+      background-image: -webkit-radial-gradient(100% center, circle, rgba(39, 184, 196,0.3) 0%, rgba(178,194,140,-0.1));
     //   background: url("../assets/common/bg.jpg");
       height: 1200px;
       background-size: 100%;
